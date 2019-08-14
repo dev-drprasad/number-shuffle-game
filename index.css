@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  /* grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px; */
+  grid-gap: 10px;
+  justify-content: center;
+  font-family: "Fira Code";
+  font-size: 30px;
+  color: gray;
+}
+
+.grid-cell {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.grid-cell.empty {
+  background-color: azure;
+  cursor: not-allowed;
+}
+
+#input-form {
+  text-align: center;
+}
+
+#reset-form {
+  text-align: center;
+}
+
+#result {
+  text-align: center;
+}
+
+#error {
+  text-align: center;
+  color: red;
+}
+
+#player-name {
+  margin-right: 20px;
+}
+
+#input[name="name"], #input[name="boardSize"]  {
+  height: 40px;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  outline: 0;
+  padding: 10px;
+}
